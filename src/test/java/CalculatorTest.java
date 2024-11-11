@@ -1,57 +1,54 @@
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.*;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class CalculatorTest {
 
     static Calculator calculator;
-    @Before
+    @BeforeEach
     public void föreTester(){
         calculator= new Calculator();
     }
 
     @Test
-
-
     public void testAdd(){
         int actual = calculator.add(8,9);
-        Assert.assertEquals(17,actual);
+        assertEquals(17,actual);
     }
     @Test
-
-
     public void negativTestAdd(){
         int actual = calculator.add(3,6);
-        Assert.assertNotEquals(12,actual);
+        assertNotEquals(12,actual);
     }
-    @Test
+    @org.junit.jupiter.api.Test
     public void testSubtract(){
         int actual = calculator.subtract(10,3);
-        Assert.assertNotEquals(8,actual);
+        assertNotEquals(8,actual);
 
     }
-    @Test
+    @org.junit.jupiter.api.Test
     public void testSubtractP(){
         int actual = calculator.subtract(10,3);
-        Assert.assertEquals(7,actual);
+        assertEquals(7,actual);
 
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     public void testMultiply(){
         int actual = calculator.multiply(8,2);
-        Assert.assertNotEquals(15,actual);
+        assertNotEquals(15,actual);
     }
-    @Test
+    @org.junit.jupiter.api.Test
     public void testMultiply2(){
         int actual = calculator.multiply(8,2);
-        Assert.assertEquals(16,actual);
+        assertEquals(16,actual);
     }
-    @Test
+    @org.junit.jupiter.api.Test
     public void testMultiply2_(){
         int actual = calculator.multiply(8,2);
-        Assert.assertEquals(18,actual);
+        assertEquals(18,actual);
     }
     //emre
 
