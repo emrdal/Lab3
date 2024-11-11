@@ -47,8 +47,8 @@ public class CalculatorTest {
     }
     @org.junit.jupiter.api.Test
     public void testMultiply2_(){
-        int actual = calculator.multiply(8,2);
-        assertEquals(18,actual);
+        int actual = calculator.multiply(6,2);
+        assertEquals(12,actual);
     }
     //emre
 
