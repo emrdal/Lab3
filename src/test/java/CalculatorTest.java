@@ -51,8 +51,9 @@ public class CalculatorTest {
     @Test
     public void testMultiply2_(){
         int actual = calculator.multiply(8,2);
-        Assert.assertEquals(17,actual);
+        Assert.assertEquals(18,actual);
     }
+    //emre
 
 
 }
