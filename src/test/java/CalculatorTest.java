@@ -48,10 +48,6 @@ public class CalculatorTest {
         int actual = calculator.multiply(8,2);
         Assert.assertEquals(16,actual);
     }
-    @Test
-    public void testMultiply2_(){
-        int actual = calculator.multiply(8,2);
-        Assert.assertEquals(17,actual);
-    }
+
 
 }
